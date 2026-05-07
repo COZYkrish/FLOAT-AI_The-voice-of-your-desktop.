@@ -1,0 +1,28 @@
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.cache/
+
+# Logs
+logs/
+*.log
+
+# Application Specific
+whatsapp_session/
+reminders.json
+contacts.json
+contacts.csv
+
+# OS
+.DS_Store
+Thumbs.db

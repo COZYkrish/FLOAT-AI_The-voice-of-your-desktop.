@@ -1,0 +1,41 @@
+# FLOAT AI — Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# ── Core AI & API ────────────────────────────────────────────────────────────
+groq==0.9.0
+python-dotenv==1.0.1
+
+# ── Voice Input / Output ─────────────────────────────────────────────────────
+SpeechRecognition==3.10.4
+PyAudio==0.2.14
+pyttsx3==2.90
+gTTS==2.5.1
+pygame==2.5.2
+
+# ── System Control ────────────────────────────────────────────────────────────
+pyautogui==0.9.54
+pyperclip==1.9.0
+pycaw==20230407          # Windows volume control
+comtypes==1.4.1          # pycaw dependency
+wmi==1.5.1               # Windows brightness
+
+# ── Messaging ─────────────────────────────────────────────────────────────────
+selenium>=4.20.0
+webdriver-manager>=4.0.0
+
+# ── Web & Search ──────────────────────────────────────────────────────────────
+requests==2.31.0
+wikipedia==1.4.0
+newsapi-python==0.2.7
+
+# ── Media ────────────────────────────────────────────────────────────────────
+spotipy==2.23.0
+yt-dlp>=2026.3.17
+
+# ── Files & Productivity ─────────────────────────────────────────────────────
+simpleeval==0.9.13
+schedule==1.2.1
+
+# ── GUI & System Tray ────────────────────────────────────────────────────────
+pystray==0.19.5
+Pillow==10.3.0
