@@ -143,7 +143,7 @@ def get_news(country: str = "in", count: int = 5) -> str:
         if not headlines:
             return "No headlines available right now."
 
-    #     return "Here are today's top headlines: " + " ... ".join(headlines)
-    # except Exception as e:
-    #     logger.error(f"News error: {e}")
-    #     return "I couldn't fetch the news right now."
+        return "Here are today's top headlines: " + " ... ".join(headlines)
+    except Exception as e:
+        logger.error(f"News error: {e}")
+        return "I couldn't fetch the news right now."
