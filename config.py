@@ -45,7 +45,7 @@ CHIME_PATH          = ASSETS_DIR / "chime.wav"
 TTS_LANG            = "en"     # 'en' for English, 'hi' for Hindi
 STT_LANG            = "en-US"  # 'en-US' or 'hi-IN'
 
-# WhatsApp Web (Selenium)
+WhatsApp Web (Selenium)
 WHATSAPP_SESSION_DIR = str(BASE_DIR / "whatsapp_session")
 WHATSAPP_HEADLESS    = os.getenv("WHATSAPP_HEADLESS", "false").lower() == "true"
 

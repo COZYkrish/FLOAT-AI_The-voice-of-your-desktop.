@@ -1,5 +1,5 @@
 # media.py — FLOAT AI Desktop Assistant
-# Spotify control (spotipy), YouTube audio (yt-dlp + pygame), Local music
+Spotify control (spotipy), YouTube audio (yt-dlp + pygame), Local music
 
 import os
 import re

@@ -1,6 +1,6 @@
 # gui.py — FLOAT AI Desktop Assistant
 # tkinter dashboard: status dot, animated waveform, conversation log,
-# text input fallback, quick-action buttons, system tray (pystray)
+text input fallback, quick-action buttons, system tray (pystray)
 
 import math
 import queue
