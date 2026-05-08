@@ -10,21 +10,21 @@ from config import log, FLOAT_VERSION
 from voice  import speak, WakeWordListener
 from brain  import route_intent, extract_entities, ask_groq
 
-# logger = logging.getLogger("FLOAT")
+logger = logging.getLogger("FLOAT")
 
-# # ─── Shared inter-thread queue ────────────────────────────────────────────────
-# _gui_queue: queue.Queue = queue.Queue(maxsize=200)
+# ─── Shared inter-thread queue ────────────────────────────────────────────────
+_gui_queue: queue.Queue = queue.Queue(maxsize=200)
 
-# # ─── Lazy module imports (graceful degradation) ───────────────────────────────
-# import system_control as sc
-# import messaging      as msg
-# import web            as web_mod
-# import media          as media_mod
-# import files          as files_mod
-# import expenses       as exp_mod
+# ─── Lazy module imports (graceful degradation) ───────────────────────────────
+import system_control as sc
+import messaging      as msg
+import web            as web_mod
+import media          as media_mod
+import files          as files_mod
+import expenses       as exp_mod
 
-# # Give files module access to speak (avoids circular import)
-# files_mod.set_speak_callback(lambda text: speak(text, blocking=False))
+# Give files module access to speak (avoids circular import)
+files_mod.set_speak_callback(lambda text: speak(text, blocking=False))
 
 
 # ─── GUI update helpers ───────────────────────────────────────────────────────
