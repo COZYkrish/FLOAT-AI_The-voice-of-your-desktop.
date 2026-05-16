@@ -1,10 +1,10 @@
 # """
 # Import Google Contacts CSV into FLOAT AI contacts.json.
-
+#
 # Usage:
-  1. Export contacts from https://contacts.google.com as Google CSV
-  2. Save the CSV file as 'contacts.csv' in the FLOAT AI folder
-  3. Run: python import_contacts.py
+#   1. Export contacts from https://contacts.google.com as Google CSV
+#   2. Save the CSV file as 'contacts.csv' in the FLOAT AI folder
+#   3. Run: python import_contacts.py
 # """
 
 import csv

@@ -72,7 +72,7 @@ def clear_history() -> None:
 
 
 # ─── Intent Router ────────────────────────────────────────────────────────────
-Each entry: (compiled regex, handler key)
+# Each entry: (compiled regex, handler key)
 # Handler key is resolved in float.py against the module functions.
 
 INTENT_PATTERNS: list[tuple] = [

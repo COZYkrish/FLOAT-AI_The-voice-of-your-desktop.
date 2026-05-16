@@ -1,5 +1,5 @@
 # voice.py — FLOAT AI Desktop Assistant
-Wake word detection, Speech-to-Text (Google), Text-to-Speech (pyttsx3/gTTS)
+# Wake word detection, Speech-to-Text (Google), Text-to-Speech (pyttsx3/gTTS)
 
 import io
 import os
