@@ -66,10 +66,10 @@ def add_contact(name: str, phone: str) -> str:
         return (f"'{phone}' doesn't look like a valid phone number. "
                 "Please include the country code, like +919876543210.")
 
-    contacts = _load_contacts()
-    contacts[name.lower().strip()] = clean_phone
-    _save_contacts(contacts)
-    return f"Saved {name}'s number as {clean_phone}."
+    # contacts = _load_contacts()
+    # contacts[name.lower().strip()] = clean_phone
+    # _save_contacts(contacts)
+    # return f"Saved {name}'s number as {clean_phone}."
 
 
 def lookup_contact(name: str) -> str:
