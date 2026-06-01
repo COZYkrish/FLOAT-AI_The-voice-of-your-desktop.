@@ -80,7 +80,7 @@ def lookup_contact(name: str) -> str:
     return f"I don't have a number saved for {name}."
 
 
-─── WhatsApp (via Selenium) ─────────────────────────────────────────────────
+# ─── WhatsApp (via Selenium) ─────────────────────────────────────────────────
 def send_whatsapp(contact: str, message: str) -> str:
     """Send a WhatsApp message to a contact by name."""
     try:
