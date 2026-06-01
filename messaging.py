@@ -72,25 +72,25 @@ def add_contact(name: str, phone: str) -> str:
     return f"Saved {name}'s number as {clean_phone}."
 
 
-# def lookup_contact(name: str) -> str:
-#     """Look up a contact's number and return a spoken response."""
-#     phone = get_phone(name)
-#     if phone:
-#         return f"{name}'s number is {phone}."
-#     return f"I don't have a number saved for {name}."
+def lookup_contact(name: str) -> str:
+    """Look up a contact's number and return a spoken response."""
+    phone = get_phone(name)
+    if phone:
+        return f"{name}'s number is {phone}."
+    return f"I don't have a number saved for {name}."
 
 
 # ─── WhatsApp (via Selenium) ─────────────────────────────────────────────────
-def send_whatsapp(contact: str, message: str) -> str:
-    """Send a WhatsApp message to a contact by name."""
-    try:
-        import whatsapp as wa
+# def send_whatsapp(contact: str, message: str) -> str:
+#     """Send a WhatsApp message to a contact by name."""
+#     try:
+#         import whatsapp as wa
 
-        phone = get_phone(contact)
-        if not phone:
-            return (f"I don't have {contact}'s number. "
-                    f"You can add it by saying: save {contact}'s number as "
-                    f"plus 91 and the number.")
+#         phone = get_phone(contact)
+#         if not phone:
+#             return (f"I don't have {contact}'s number. "
+#                     f"You can add it by saying: save {contact}'s number as "
+#                     f"plus 91 and the number.")
 
         logger.info(f"Sending WhatsApp to {contact} ({phone})")
         return wa.send_message(phone, message)
