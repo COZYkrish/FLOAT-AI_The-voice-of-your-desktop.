@@ -67,17 +67,17 @@ def add_contact(name: str, phone: str) -> str:
                 "Please include the country code, like +919876543210.")
 
     contacts = _load_contacts()
-    contacts[name.lower().strip()] = clean_phone
-    _save_contacts(contacts)
-    return f"Saved {name}'s number as {clean_phone}."
+    # contacts[name.lower().strip()] = clean_phone
+    # _save_contacts(contacts)
+    # return f"Saved {name}'s number as {clean_phone}."
 
 
-# def lookup_contact(name: str) -> str:
-#     """Look up a contact's number and return a spoken response."""
-#     phone = get_phone(name)
-#     if phone:
-#         return f"{name}'s number is {phone}."
-#     return f"I don't have a number saved for {name}."
+def lookup_contact(name: str) -> str:
+    """Look up a contact's number and return a spoken response."""
+    phone = get_phone(name)
+    if phone:
+        return f"{name}'s number is {phone}."
+    return f"I don't have a number saved for {name}."
 
 
 # ─── WhatsApp (via Selenium) ─────────────────────────────────────────────────
